@@ -1,7 +1,13 @@
+import { PedidoComponent } from './pedido/pedido.component';
+import { CardapioComponent } from './cardapio/cardapio.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'cardapio', component: CardapioComponent },
+  { path: 'pedido', component: PedidoComponent },
+  { path: '', redirectTo: 'cardapio', pathMatch: 'full' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

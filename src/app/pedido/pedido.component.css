@@ -1,0 +1,12 @@
+:host {
+  background-color: grey;
+}
+
+.btnpedido {
+  margin: 1em;
+}
+
+.total {
+  font-weight: bold;
+  padding: 2em;
+}
